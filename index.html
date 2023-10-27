@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract WhatsApp Contacts</title>
+    <style>
+        .container {
+            width: 300px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .dt {
+            display: block;    
+            font-size: 1.0rem;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"> Export WhatsApp Contacts </h1>
+        <span class="dt" id="contacts"></span>
+        <button id="download-btn"> Downlaod contacts</button>
+    </div>
+    <!-- use version 0.20.0 -->
+    <script lang="javascript" src="xlsx.full.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

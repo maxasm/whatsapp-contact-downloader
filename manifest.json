@@ -1,0 +1,22 @@
+{
+  "manifest_version":3,
+  "name":"WhatsApp contact extractor Demo",
+  "description": "This is a demo plugin for freelancer.com to show how to extract WhatApp contacts, Labels and Groups.",
+  "version": "1.0",
+  "author":"Maxwell Macharia Mbugua",
+  "permissions": ["storage", "tabs"],
+  "background":{
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "js": ["cs/whatsapp.js"]
+    }
+  ],
+    "short_name": "WhatsApp contact extractor - DEMO",
+    "action": {
+      "default_popup": "index.html"
+    }
+  }
